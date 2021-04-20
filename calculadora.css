@@ -1,0 +1,126 @@
+* {
+    font-family: impact;
+}
+
+.flex-container {
+    display: flex;
+    justify-content:space-around;
+    margin-top: 40px;
+    filter: drop-shadow(5px 10px 5px rgb(63, 63, 63));
+}
+
+.miau {
+    background-image: url("gatitos.jpg");
+}
+
+.supCont {
+    background-color: #474747;
+    background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ff0000' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+    display: inline-block;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.visor {
+    background-color: darkcyan;
+    height: 80px;
+    line-height: 70px;
+    width: 96%;
+    border-bottom: 5px solid rgb(63, 115, 117); 
+    text-align: right;
+    font-size: 53px;
+    margin: auto;
+    margin-bottom: 15px;
+    color:seashell;
+      
+}
+
+.grid__container {
+    display: grid;
+    margin: auto;
+    grid-template-columns: 90px 90px 90px 90px 90px;
+    grid-template-rows: 50px 90px 90px 90px 90px;
+    gap: 5px;
+    text-align: center;
+}
+
+.grid__item {   
+    font-size: 70px;
+    background-color: cadetblue;
+    border-radius: 10px ;
+    cursor: pointer;
+}
+
+.grid__item__top {
+    font-size: 40px;
+    background-color: cadetblue;
+    border-radius: 10px ;
+    cursor: pointer;
+}
+
+.grid__item:hover {
+    background-color: rgb(63, 115, 117);
+}
+
+gallery:first-child {
+    background-color: rgb(228, 72, 181);
+    color: white;
+}
+
+gallery:first-child:hover, gallery:nth-child(20):hover {
+    background-color: rgb(190, 8, 136);
+}
+
+gallery:nth-child(2) { 
+    background-color: rgb(252, 136, 94);
+}
+
+gallery:nth-child(2):hover { 
+    background-color: rgb(238, 85, 29);
+}
+
+gallery:nth-child(3), gallery:nth-child(4), gallery:nth-child(5), gallery:nth-child(9), gallery:nth-child(10), gallery:nth-child(14), gallery:nth-child(15), gallery:nth-child(19), gallery:nth-child(23)  { 
+    background-color: rgb(130, 206, 164);
+}
+
+gallery:nth-child(3):hover, gallery:nth-child(4):hover, gallery:nth-child(5):hover, gallery:nth-child(9):hover, gallery:nth-child(10):hover, gallery:nth-child(14):hover, gallery:nth-child(15):hover, gallery:nth-child(19):hover, gallery:nth-child(23):hover  { 
+    background-color: rgb(52, 202, 119);
+}
+
+gallery:nth-child(21) { 
+    grid-column: 1/3;
+}
+
+gallery:nth-child(20) { 
+    grid-row: 4/6;
+    grid-column: 5/6;
+    background-color: rgb(228, 72, 181);
+    color: white;
+}
+
+
+@media (max-width: 530px){
+  
+    .grid__container {
+        grid-template-columns: 45px 45px 45px 45px 45px;
+        grid-template-rows: 25px 45px 45px 45px 45px;
+        gap: 2.5px;
+        text-align: center;
+    }
+
+    .visor {
+        height: 60px;
+        line-height: 50px;
+        border-bottom: 2.5px solid rgb(63, 115, 117); 
+        font-size: 30px;
+    }
+
+    .grid__item {   
+        font-size: 35px;
+    }
+    
+    .grid__item__top {
+        font-size: 20px;
+    }
+    
+}
